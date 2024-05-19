@@ -16,27 +16,25 @@ class MexeContatos:
         self.ponteir.email.append(e)
 
     def remove(self, n):
-        verdade = False
+        verdade = True
         for i in range(len(self.ponteir.nome)):
             if self.ponteir.nome[i] == n:
                 self.ponteir.nome.pop(i)
                 self.ponteir.telefone.pop(i)
                 self.ponteir.email.pop(i)
-                verdade = True
                 return
-        if verdade is False:
+        if verdade is True:
             print("Nome nao encontrado.")
 
     def busca(self, n):
-        verdade = False
+        verdade = True
         for i in range(len(self.ponteir.nome)):
             if self.ponteir.nome[i] == n:
                 print(self.ponteir.nome[i])
                 print(self.ponteir.telefone[i])
                 print(self.ponteir.email[i])
-                verdade = True
                 return
-        if verdade is False:
+        if verdade is True:
             print("Nome nao encontrado.")
 
     def listar(self):
@@ -51,4 +49,5 @@ objeto.listar()
 objeto.remove("João")
 objeto.busca("Andrey")
 objeto.busca("Manu")
+objeto.busca("Alexia")
 objeto.listar()
