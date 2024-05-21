@@ -37,9 +37,6 @@ class SegundaListaEncadeada:
 
 
 class Concatenacao:
-    def __init__(self):
-        self.plista = PrimeiraListaEncadeada()
-        self.slista = SegundaListaEncadeada()
 
     def concatena(self, plista, slista):
         if plista.is_empty():
