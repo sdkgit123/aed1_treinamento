@@ -23,3 +23,4 @@ print(dadosproduto)
 objeto.setproduto("Mesa", 34986394)
 dadosproduto = objeto.getproduto()
 print(dadosproduto)
+
